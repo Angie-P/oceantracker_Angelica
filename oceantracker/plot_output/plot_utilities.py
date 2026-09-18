@@ -236,7 +236,7 @@ def show_output(plot_file_name=None, ):
         plt.savefig(plot_file_name,dpi=300)
 
     plt.show()
-    plt.close()  # prevents over plotting
+    #plt.close()  # prevents over plotting
 
 def animation_output(anim, movie_file, fps = 15, dpi=600,show=True):
 

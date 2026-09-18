@@ -128,7 +128,7 @@ def plot_heat_map(stats_data,  release_group_name:str = None, nt=-1, axis_lims=N
     else:
         norm = colors.Normalize(vmin=vmin, vmax=vmax)
 
-    pc = ax.pcolormesh(x, y, z, shading='gouraud', cmap=cmap, zorder=2,
+    pc = ax.pcolormesh(x, y, z, shading='nearest', cmap=cmap, zorder=2,
                            norm=norm )
 
     if axis_lims is None:    axis_lims=[x[0],x[-1],y[0],y[-1]] # set axis limits to those of the grid
